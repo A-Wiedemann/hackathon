@@ -1,13 +1,52 @@
-<h1 mat-dialog-title>Deleting <b>TEST</b> </h1>
+<h1 mat-dialog-title>Your Donation Progress  </h1>
 
 <div mat-dialog-content>
-  <p>Are you sure you want to delete <b>TEST</b></p>
+
+
+  <mat-stepper linear #stepper>
+    <!-- #docregion editable -->
+    <mat-step [editable]="isEditable">
+      <ng-template matStepLabel>Payed</ng-template>
+    </mat-step>
+    <mat-step [editable]="isEditable">
+      <ng-template matStepLabel>in Country</ng-template>
+    </mat-step>
+
+    <mat-step [editable]="isEditable">
+      <ng-template matStepLabel>at Project Team</ng-template>
+    </mat-step>
+
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      <p>You're MSFCoin arrived! Thank You</p>
+      <!--
+       <div>
+         <button mat-button matStepperPrevious>Back</button>
+         <button mat-button (click)="stepper.reset()">Reset</button>
+       </div>
+
+      -->
+    </mat-step>
+  </mat-stepper>
+
 </div>
+
+<!--
+<button mat-raised-button (click)="isEditable = !isEditable">
+  {{!isEditable ? 'Enable edit mode' : 'Disable edit mode'}}
+</button>
+-->
+
 
 
 <div mat-dialog-actions>
-  <button mat-button (click)="onDoneClick()">No Thanks</button>
- <!--
- <button mat-button (click)="onYesClick()" cdkFocusInitial><b>Yes</b>, please</button>
- -->
+  <button mat-button (click)="onDoneClick()">Done</button>
+  <!--
+  <button mat-button (click)="onYesClick()" cdkFocusInitial><b>Yes</b>, please</button>
+  -->
 </div>
+
+
+<!-- Copyright 2021 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

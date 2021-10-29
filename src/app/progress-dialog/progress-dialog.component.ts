@@ -1,12 +1,15 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 
+
 @Component({
   selector: 'app-progress-dialog',
   templateUrl: './progress-dialog.component.html',
   styleUrls: ['./progress-dialog.component.css']
 })
 export class ProgressDialogComponent implements OnInit {
+
+  isEditable = false;
 
   constructor(
     public dialogRef: MatDialogRef<ProgressDialogComponent>,

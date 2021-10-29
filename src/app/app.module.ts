@@ -9,6 +9,8 @@ import { MatCardModule } from '@angular/material/card';
 import { ProgressDialogComponent } from './progress-dialog/progress-dialog.component';
 import { MatDialogModule } from "@angular/material/dialog";
 
+import {MatStepperModule} from '@angular/material/stepper';
+
 import { MatButtonModule } from '@angular/material/button';
 
 
@@ -24,6 +26,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatButtonModule,
     MatCardModule,
     MatDialogModule,
+    MatStepperModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
