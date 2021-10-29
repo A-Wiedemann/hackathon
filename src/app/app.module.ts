@@ -12,13 +12,15 @@ import { MatDialogModule } from "@angular/material/dialog";
 import {MatStepperModule} from '@angular/material/stepper';
 
 import { MatButtonModule } from '@angular/material/button';
+import { DontationDialogComponent } from './dontation-dialog/dontation-dialog.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectCardComponent,
-    ProgressDialogComponent
+    ProgressDialogComponent,
+    DontationDialogComponent
   ],
   imports: [
     BrowserModule,
