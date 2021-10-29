@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatCardModule } from '@angular/material/card';
+
 
 @NgModule({
   declarations: [
@@ -10,7 +14,9 @@ import { ProjectCardComponent } from './project-card/project-card.component';
     ProjectCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
