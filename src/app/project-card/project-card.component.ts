@@ -2,7 +2,16 @@ import {ProgressDialogComponent} from "../progress-dialog/progress-dialog.compon
 
 import {MatDialog} from "@angular/material/dialog";
 import {DontationDialogComponent} from "../dontation-dialog/dontation-dialog.component";
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+
+
+interface Project {
+  msfCoins: number;
+  projectName: string;
+  country: string;
+  description: string;
+  header: string;
+}
 
 @Component({
   selector: 'app-project-card',
@@ -17,6 +26,9 @@ export class ProjectCardComponent implements OnInit {
   constructor(
     private dialog: MatDialog,
   ) { }
+
+  @Input() project: Project;
+
 
   ngOnInit(): void {
   }

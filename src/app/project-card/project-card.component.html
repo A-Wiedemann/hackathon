@@ -2,8 +2,8 @@
   <mat-card class="example-card">
     <img mat-card-image src="/assets/MSB106202.webp" alt="Photo">
     <mat-card-content>
-      <h2>Haiti: Ärzte ohne Grenzen besorgt über eingeschränkte Gesundheitsversorgung</h2>
-      <p>In Haiti wird das Benzin knapp - mit drastischen Folgen für die Gesundheitsversorgung. Auch die Sicherheitslage ist weiterhin sehr angespannt.</p>
+      <h3>{{project.header}}</h3>
+      <p>{{project.description}}</p>
       <table style="width: 100%">
         <tr>
           <th>Crypto invested</th>
@@ -11,9 +11,9 @@
           <th>Country</th>
         </tr>
         <tr style="text-align: center">
-          <td>250 MSF Coins</td>
-          <td>Fuel in Haiti</td>
-          <td>Haiti</td>
+          <td>{{project.msfCoins}} MSF Coins</td>
+          <td>{{project.projectName}}</td>
+          <td>{{project.country}}</td>
         </tr>
       </table>
     </mat-card-content>

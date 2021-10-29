@@ -335,24 +335,16 @@
 <ng-template #elseBlock>
   <div class="content" role="main">
       <div style="padding-top: 10rem">
-    <app-project-card (projectDetailsEvent)="openProjectDetails()">
-    </app-project-card>
+
+        <li *ngFor="let project of projects">
+          <app-project-card [project]="project" (projectDetailsEvent)="openProjectDetails()">
+          </app-project-card>
+          <br>
+        </li>
       </div>
   </div>
 </ng-template>
 
-
-
-
-<!-- <div class="content" role="main"> -->
-<!--   <app-project-card> -->
-<!--   </app-project-card> -->
-
-
-<!-- </div> -->
-<button mat-icon-button (click)="openDeleteDialog()" >
-  TEST
-</button>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
