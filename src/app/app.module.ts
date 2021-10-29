@@ -9,6 +9,7 @@ import { MatCardModule } from '@angular/material/card';
 import { ProgressDialogComponent } from './progress-dialog/progress-dialog.component';
 import { MatDialogModule } from "@angular/material/dialog";
 
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { MatDialogModule } from "@angular/material/dialog";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MatButtonModule,
     MatCardModule,
     MatDialogModule,
   ],
