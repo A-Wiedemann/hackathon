@@ -1,1 +1,23 @@
-<p>dontation-dialog works!</p>
+<h1>Donate to {{data.name}}</h1>
+
+<div mat-dialog-content>
+
+  Your Coins:  120 MSFCoins
+
+  <div class="form-group">
+    <label>Donate: </label>
+    <input type="text" formControlName="donationAmount" class="form-control" />
+  </div>
+
+
+
+</div>
+
+
+<div mat-dialog-actions>
+  <button style="float: right" mat-button (click)="onDonateClick()">Donate</button>
+  <!--
+  <button mat-button (click)="onYesClick()" cdkFocusInitial><b>Yes</b>, please</button>
+  -->
+</div>
+

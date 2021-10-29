@@ -17,13 +17,10 @@ export class DontationDialogComponent implements OnInit {
   }
 
 
-  onDoneClick(): void {
-    this.dialogRef.close();
-  }
-
-  onYesClick(): void {
+  onDonateClick(): void {
     this.dialogRef.close();
 
   }
+
 
 }

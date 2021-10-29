@@ -29,6 +29,7 @@ export class ProjectCardComponent implements OnInit {
   ) { }
 
   @Input() project: Project;
+  private projectName: any;
 
 
   ngOnInit(): void {
@@ -53,14 +54,14 @@ export class ProjectCardComponent implements OnInit {
     this.projectDetailsEvent.emit("yes");
   }
 
-  openDonationDialog() {
+  openDonationDialog(projectName: string) {
 
     this.donated = true;
 
     let dialogRef = this.dialog.open(DontationDialogComponent, {
       //width: '1000px',
       //height: '600px',
-      data: {name: name}
+      data: {name: projectName}
       //data: { name: this.name, animal: this.animal }
     });
 
