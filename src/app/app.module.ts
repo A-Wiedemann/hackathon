@@ -13,6 +13,7 @@ import {MatStepperModule} from '@angular/material/stepper';
 
 import { MatButtonModule } from '@angular/material/button';
 import { DontationDialogComponent } from './dontation-dialog/dontation-dialog.component';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { DontationDialogComponent } from './dontation-dialog/dontation-dialog.co
     AppComponent,
     ProjectCardComponent,
     ProgressDialogComponent,
-    DontationDialogComponent
+    DontationDialogComponent,
+    ProjectDetailsComponent,
   ],
   imports: [
     BrowserModule,
