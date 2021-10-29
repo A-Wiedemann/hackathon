@@ -18,7 +18,7 @@
       </table>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button style="background-color: white">Details</button>
+      <button mat-raised-button style="background-color: white" (click)="openProjectDetails()">Details</button>
       <button mat-raised-button style="background-color: white" (click)="openDonationDialog()" >
         Donate
       </button>
@@ -26,7 +26,6 @@
       <button mat-raised-button *ngIf="this.donated" style="background-color: white; float: right" (click)="openProgressDialog()" >
         Progress
       </button>
-
     </mat-card-actions>
   </mat-card>
 </div>

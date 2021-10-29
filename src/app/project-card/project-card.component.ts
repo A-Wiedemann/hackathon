@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
 import {ProgressDialogComponent} from "../progress-dialog/progress-dialog.component";
 
 import {MatDialog} from "@angular/material/dialog";
 import {DontationDialogComponent} from "../dontation-dialog/dontation-dialog.component";
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-project-card',
@@ -11,6 +11,8 @@ import {DontationDialogComponent} from "../dontation-dialog/dontation-dialog.com
 })
 export class ProjectCardComponent implements OnInit {
   donated = false;
+
+  @Output() projectDetailsEvent = new EventEmitter<string>();
 
   constructor(
     private dialog: MatDialog,
@@ -32,6 +34,10 @@ export class ProjectCardComponent implements OnInit {
       //console.log('The dialog was closed');
       //this.animal = result;
     });
+  }
+
+  openProjectDetails() {
+    this.projectDetailsEvent.emit("yes");
   }
 
   openDonationDialog() {

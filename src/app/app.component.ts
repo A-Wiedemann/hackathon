@@ -10,14 +10,16 @@ import {ProgressDialogComponent} from "./progress-dialog/progress-dialog.compone
 export class AppComponent {
   title = 'hackathon';
 
-  constructor(
+  showDetails = false;
 
-              ) {
+  constructor(
+  ) {
   }
 
   openDeleteDialog() {
+  }
 
-
-
+  openProjectDetails() {
+    this.showDetails = true;
   }
 }
