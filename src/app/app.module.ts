@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCardModule } from '@angular/material/card';
 import { ProgressDialogComponent } from './progress-dialog/progress-dialog.component';
+import { MatDialogModule } from "@angular/material/dialog";
+
 
 
 @NgModule({
@@ -19,6 +21,7 @@ import { ProgressDialogComponent } from './progress-dialog/progress-dialog.compo
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
