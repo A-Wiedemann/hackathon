@@ -28,7 +28,7 @@ export class AppComponent implements OnInit{
   projects: Project[] = [
     {
       msfCoins: 1,
-      projectName: "Laura",
+      projectName: "Haiti",
       country: "lbutler0@latimes.com",
       description: "In Haiti wird das Benzin knapp - mit drastischen Folgen für die Gesundheitsversorgung. Auch die Sicherheitslage ist weiterhin sehr angespannt.",
       header: "Haiti: Ärzte ohne Grenzen besorgt über eingeschränkte Gesundheitsversorgung",
@@ -36,7 +36,7 @@ export class AppComponent implements OnInit{
     },
     {
       msfCoins: 4,
-      projectName: "see",
+      projectName: "Sea Rescue",
       country: "Mediterranean Sea",
       description: "In fünf Rettungsaktionen binnen zwei Tagen haben Teams von Ärzte ohne Grenzen an Bord der Geo Barents 367 Menschen aus Seenot im Mittelmeer gerettet.",
       header: "172 Kinder und Minderjährige aus Seenot gerettet",
@@ -44,7 +44,7 @@ export class AppComponent implements OnInit{
     },
     {
       msfCoins: 3,
-      projectName: "see-t",
+      projectName: "Climate Protection",
       country: "Global",
       description: "Nicht zuletzt die verheerenden Folgen der Überschwemmungen im nordrhein-westfälischen Ahrtal zeigen, dass die Klimakrise auch längst in Deutschland angekommen ist.",
       header: "Klimaschutz ist Gesundheitsschutz",
