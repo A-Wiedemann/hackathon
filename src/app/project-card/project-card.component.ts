@@ -5,12 +5,13 @@ import {DontationDialogComponent} from "../dontation-dialog/dontation-dialog.com
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 
-interface Project {
+export interface Project {
   msfCoins: number;
   projectName: string;
   country: string;
   description: string;
   header: string;
+  image: string;
 }
 
 @Component({

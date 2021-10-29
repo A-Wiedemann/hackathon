@@ -336,11 +336,11 @@
   <div class="content" role="main">
       <div style="padding-top: 10rem">
 
-        <li *ngFor="let project of projects">
+        <div *ngFor="let project of projects">
           <app-project-card [project]="project" (projectDetailsEvent)="openProjectDetails()">
           </app-project-card>
           <br>
-        </li>
+        </div>
       </div>
   </div>
 </ng-template>
