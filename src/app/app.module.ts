@@ -8,13 +8,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { ProgressDialogComponent } from './progress-dialog/progress-dialog.component';
 import { MatDialogModule } from "@angular/material/dialog";
+import { MatRadioModule } from '@angular/material/radio'
 
-import {MatStepperModule} from '@angular/material/stepper';
+import { MatStepperModule } from '@angular/material/stepper';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { DontationDialogComponent } from './dontation-dialog/dontation-dialog.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { RouterModule } from "@angular/router";
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { routing } from "./app.routing";
+import { ProjectCardPageComponent } from './project-card-page/project-card-page.component';
+import { PayoutPageComponent } from './payout-page/payout-page.component';
+// import { CreateProjectComponent } from './create-project/create-project.component';
 
 
 @NgModule({
@@ -24,6 +31,9 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
     ProgressDialogComponent,
     DontationDialogComponent,
     ProjectDetailsComponent,
+    ProjectCardPageComponent,
+    PayoutPageComponent,
+    // CreateProjectComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +42,11 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
     MatCardModule,
     MatDialogModule,
     MatProgressBarModule,
+    MatRadioModule,
     MatStepperModule,
+    RouterModule,
+    MatSidenavModule,
+    routing,
   ],
   providers: [],
   bootstrap: [AppComponent]

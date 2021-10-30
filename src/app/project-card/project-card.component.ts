@@ -3,6 +3,7 @@ import {ProgressDialogComponent} from "../progress-dialog/progress-dialog.compon
 import {MatDialog} from "@angular/material/dialog";
 import {DontationDialogComponent} from "../dontation-dialog/dontation-dialog.component";
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import {Router} from "@angular/router";
 
 
 export interface Project {
@@ -26,6 +27,7 @@ export class ProjectCardComponent implements OnInit {
 
   constructor(
     private dialog: MatDialog,
+    private router: Router,
   ) { }
 
   @Input() project: Project;
@@ -51,7 +53,7 @@ export class ProjectCardComponent implements OnInit {
   }
 
   openProjectDetails() {
-    this.projectDetailsEvent.emit("yes");
+    this.router.navigateByUrl('/project');
   }
 
   openDonationDialog(projectName: string) {
