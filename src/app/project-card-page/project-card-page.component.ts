@@ -20,9 +20,9 @@ export class ProjectCardPageComponent implements OnInit {
 
   projects: Project[] = [
     {
-      msfCoins: 1,
-      projectName: "Haiti",
-      country: "lbutler0@latimes.com",
+      msfCoins: 40000,
+      projectName: "Fuel in Haiti",
+      country: "Haiti",
       description: "In Haiti wird das Benzin knapp - mit drastischen Folgen für die Gesundheitsversorgung. Auch die Sicherheitslage ist weiterhin sehr angespannt.",
       header: "Haiti: Ärzte ohne Grenzen besorgt über eingeschränkte Gesundheitsversorgung",
       image: "MSB106202.webp",
