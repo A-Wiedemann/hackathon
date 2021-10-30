@@ -14,6 +14,10 @@ import {MatStepperModule} from '@angular/material/stepper';
 import { MatButtonModule } from '@angular/material/button';
 import { DontationDialogComponent } from './dontation-dialog/dontation-dialog.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
+import {RouterModule} from "@angular/router";
+import { MatSidenavModule } from '@angular/material/sidenav';
+import {routing} from "./app.routing";
+import { ProjectCardPageComponent } from './project-card-page/project-card-page.component';
 
 
 @NgModule({
@@ -23,15 +27,19 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
     ProgressDialogComponent,
     DontationDialogComponent,
     ProjectDetailsComponent,
+    ProjectCardPageComponent,
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatCardModule,
-    MatDialogModule,
-    MatStepperModule,
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatButtonModule,
+        MatCardModule,
+        MatDialogModule,
+        MatStepperModule,
+        RouterModule,
+        MatSidenavModule,
+      routing,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
