@@ -9,7 +9,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 export class ProjectDetailsComponent implements OnInit {
 
   constructor(
-    private router: Router,
+    public router: Router,
     private route: ActivatedRoute,
   ) { }
 

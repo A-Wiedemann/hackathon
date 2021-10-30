@@ -1,0 +1,15 @@
+<div class="content" role="main" style="padding-top: 5%; text-align:center">
+
+
+  <div  *ngIf="showSuccess; then thenBlock else elseBlock"></div>
+  <ng-template #thenBlock>
+    <img src="https://c.tenor.com/mqzuK_iOjzYAAAAC/leonardo-dicaprio-cheers.gif" alt="this slowpoke moves"  width="250" />
+    <p style="font-size: xx-large; padding-top: 1rem">Your MSF coins were successfully transferred.</p>
+  </ng-template>
+  <ng-template #elseBlock>
+    <label id="example-radio-group-label">How should we payout</label>
+    <div *ngFor="let choice of choices">
+      <button mat-button (click)="onSelectPayment()">{{choice}}</button>
+    </div>
+  </ng-template>
+</div>
