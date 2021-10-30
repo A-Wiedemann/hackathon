@@ -12,6 +12,7 @@ import { MatDialogModule } from "@angular/material/dialog";
 import {MatStepperModule} from '@angular/material/stepper';
 
 import { MatButtonModule } from '@angular/material/button';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { DontationDialogComponent } from './dontation-dialog/dontation-dialog.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 
@@ -30,6 +31,7 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
     MatButtonModule,
     MatCardModule,
     MatDialogModule,
+    MatProgressBarModule,
     MatStepperModule,
   ],
   providers: [],
