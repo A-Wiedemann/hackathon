@@ -1,0 +1,18 @@
+<div class="content" role="main">
+  <div style="padding-top: 10rem">
+
+    <div *ngFor="let project of projects; let i = index ">
+      <div class="row" *ngIf="i % 2 == 0">
+        <div class="column">
+          <app-project-card  [project]="projects[i]"></app-project-card>
+        </div>
+
+
+        <div class="column">
+          <app-project-card *ngIf="i + 1 < projects.length" [project]="projects[i+1]"></app-project-card>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
