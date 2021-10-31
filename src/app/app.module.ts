@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
@@ -8,7 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { ProgressDialogComponent } from './progress-dialog/progress-dialog.component';
 import { MatDialogModule } from "@angular/material/dialog";
-import { MatRadioModule } from '@angular/material/radio'
+import { MatRadioModule } from '@angular/material/radio';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 import { MatStepperModule } from '@angular/material/stepper';
 
@@ -46,6 +49,9 @@ import { PayoutPageComponent } from './payout-page/payout-page.component';
     MatStepperModule,
     RouterModule,
     MatSidenavModule,
+    // MatFormFieldModule,
+    // FormsModule,
+    // ReactiveFormsModule,
     routing,
   ],
   providers: [],
